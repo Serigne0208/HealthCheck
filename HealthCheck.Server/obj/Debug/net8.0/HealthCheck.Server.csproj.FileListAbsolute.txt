@@ -33,3 +33,4 @@ D:\Projects\HealthCheck\HealthCheck.Server\obj\Debug\net8.0\refint\HealthCheck.S
 D:\Projects\HealthCheck\HealthCheck.Server\obj\Debug\net8.0\HealthCheck.Server.pdb
 D:\Projects\HealthCheck\HealthCheck.Server\obj\Debug\net8.0\HealthCheck.Server.genruntimeconfig.cache
 D:\Projects\HealthCheck\HealthCheck.Server\obj\Debug\net8.0\ref\HealthCheck.Server.dll
+D:\Projects\HealthCheck\HealthCheck.Server\obj\Debug\net8.0\HealthCheck.Server.sourcelink.json

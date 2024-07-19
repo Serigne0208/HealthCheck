@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthCheck.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15f4d49213dc6cbd3146042ed348f4e0d60b7c5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthCheck.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthCheck.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
