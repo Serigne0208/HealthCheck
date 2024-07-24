@@ -24,8 +24,8 @@ export class AppComponent {
     this.isOffline = this.connectionService.monitor(options)
       .pipe(
         map(state => {
-          console.log('Network Connection:', state.hasNetworkConnection);
-          console.log('Internet Access:', state.hasInternetAccess);
+          //console.log('Network Connection:', state.hasNetworkConnection);
+        //  console.log('Internet Access:', state.hasInternetAccess);
          return !state.hasNetworkConnection || !state.hasInternetAccess
         }));
   }

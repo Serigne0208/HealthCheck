@@ -1,4 +1,5 @@
 global using HealthCheck.Server;
+using Microsoft.AspNetCore.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddHealthChecks()
             new ICMPHealthCheck("www.google.com", 100))
      .AddCheck("ICMP_03",
             new ICMPHealthCheck($"www.{Guid.NewGuid():N}.com", 100));
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -23,6 +25,9 @@ builder.Services.AddCors(options =>
      cfg.AllowAnyMethod();
      cfg.WithOrigins(builder.Configuration["AllowedCORS"]);
  }));
+
+//SignalR
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -44,10 +49,20 @@ app.UseCors("AngularPolicy");
 
 app.UseHealthChecks(new PathString("/api/health"), new CustomHealthCheckOptions());
 
+
 app.MapControllers();
 
 app.MapMethods("/api/heartbeat", new[] { "HEAD" },
  () => Results.Ok());
+
+//signalR
+app.MapHub<HealthCheckHub>("/api/health-hub");
+
+app.MapGet("/api/broadcast/update2", async (IHubContext<HealthCheckHub> hub) =>
+{
+    await hub.Clients.All.SendAsync("Update", "test");
+    return Results.Text("Update message sent.");
+});
 
 app.MapFallbackToFile("/index.html");
 

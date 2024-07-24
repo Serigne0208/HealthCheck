@@ -23,8 +23,9 @@
     <PackageJsonDependenciesAngularPlatformBrowserDynamic Condition="$(PackageJsonDependenciesAngularPlatformBrowserDynamic) == ''">17.0.3</PackageJsonDependenciesAngularPlatformBrowserDynamic>
     <PackageJsonDependenciesAngularRouter Condition="$(PackageJsonDependenciesAngularRouter) == ''">17.0.3</PackageJsonDependenciesAngularRouter>
     <PackageJsonDependenciesAngularServiceWorker Condition="$(PackageJsonDependenciesAngularServiceWorker) == ''">17.0.3</PackageJsonDependenciesAngularServiceWorker>
-    <PackageJsonDependenciesNgConnectionService Condition="$(PackageJsonDependenciesNgConnectionService) == ''">15.0.0</PackageJsonDependenciesNgConnectionService>
+    <PackageJsonDependenciesMicrosoftSignalr Condition="$(PackageJsonDependenciesMicrosoftSignalr) == ''">^7.0.14</PackageJsonDependenciesMicrosoftSignalr>
     <PackageJsonDependenciesJestEditorSupport Condition="$(PackageJsonDependenciesJestEditorSupport) == ''">*</PackageJsonDependenciesJestEditorSupport>
+    <PackageJsonDependenciesNgConnectionService Condition="$(PackageJsonDependenciesNgConnectionService) == ''">15.0.0</PackageJsonDependenciesNgConnectionService>
     <PackageJsonDependenciesRunScriptOs Condition="$(PackageJsonDependenciesRunScriptOs) == ''">*</PackageJsonDependenciesRunScriptOs>
     <PackageJsonDependenciesRxjs Condition="$(PackageJsonDependenciesRxjs) == ''">7.8.0</PackageJsonDependenciesRxjs>
     <PackageJsonDependenciesTslib Condition="$(PackageJsonDependenciesTslib) == ''">2.3.0</PackageJsonDependenciesTslib>
